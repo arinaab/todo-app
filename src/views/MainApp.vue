@@ -11,9 +11,6 @@
     <div class="todo__links">
         <router-link class="todo__link" to="/done">Выполненные заметки ({{ doneState.length }}) <span>&rarr;</span></router-link>
         <router-link class="todo__link" to="/deleted">Корзина ({{ deletedState.length }}) <span>&rarr;</span></router-link>
-        <router-link class="todo__link" :to="{ name: 'posts' }">Другие заметки <span>&rarr;</span></router-link>
-        <router-link class="todo__link" :to="{ name: 'users' }">Список пользователей <span>&rarr;</span></router-link>
-        <router-link class="todo__link" :to="{ name: 'photos' }">Фотографии <span>&rarr;</span></router-link>
     </div>
   </div>
 </template>

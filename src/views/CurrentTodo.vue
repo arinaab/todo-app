@@ -1,7 +1,9 @@
 <template>
   <div class="current">
         <router-link class="back" to="/">Вернуться к заметкам <span>&larr;</span></router-link>
-        <h3>{{ todo.name }}</h3>
+        <div class="current__content">
+            <p>{{ todo.name }}</p>
+        </div>
   </div>
 </template>
 
@@ -38,6 +40,9 @@ export default {
 <style lang="scss" scoped>
     .current {
         padding: 30px;
+        &__content {
+            margin-top: 50px;
+        }
     }
     .back {
         top: 15px;
